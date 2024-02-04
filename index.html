@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+	</head>
+	<style>
+		.box {
+			display: flex;
+			padding: auto;
+			margin: auto;
+		}
+
+		.box>* {
+			flex: 1 1 0;
+		}
+
+		div[class="tank"] {
+			background: #7BD3EA;
+			width: 150px;
+			height: 300px;
+			border: 1px solid black;
+			margin: 50px 0px 50px 0px;
+		}
+
+		#inside1 {
+			width: 100%;
+			height: 100%;
+			background: white;
+			padding: auto;
+			margin: auto;
+		}
+
+		#inside2 {
+			width: 100%;
+			height: 100%;
+			background: white;
+			padding: auto;
+			margin: auto;
+		}
+
+		#inside3 {
+			width: 100%;
+			height: 100%;
+			background: white;
+			padding: auto;
+			margin: auto;
+		}
+
+		#inside4 {
+			width: 100%;
+			height: 100%;
+			background: white;
+			padding: auto;
+			margin: auto;
+		}
+
+		.AddTank {
+			background-color: #A1EEBD;
+			padding: auto;
+			margin: auto;
+		}
+
+		.EmptyTank {
+			background-color: #F6D6D6;
+			padding: auto;
+			margin: auto;
+		}
+	</style>
+
+	<body>
+
+		<h1 style="text-align: center; color: rgb(0, 0, 0);">Connected Tanks Problem</h1>
+		<br />
+		<div class="box">
+			<div>
+				<button type="button" class="AddTank" onclick="addWater(1)">Add</button>
+				<button type="button" class="EmptyTank" onclick="emptyWater(1)">Empty</button>
+				<div class="tank">
+					<div id="inside1"></div>
+				</div>
+				<label>Water In tank :</label>
+				<br>
+				<input type="number" id="tank1Val" readonly>
+				<br>
+				<label>Water in buffer :</label>
+				<br>
+				<input type="number" id="buffer1" readonly>
+			</div>
+
+			<div>
+				<button type="button" class="AddTank" onclick="addWater(2)">Add</button>
+				<button type="button" class="EmptyTank" onclick="emptyWater(2)">Empty</button>
+				<div class="tank">
+					<div id="inside2"></div>
+				</div>
+				<label>Water In tank :</label>
+				<br>
+				<input type="number" id="tank2Val" readonly>
+				<br>
+				<label>Water in buffer :</label>
+				<br>
+				<input type="number" id="buffer2" readonly>
+			</div>
+
+			<div>
+				<button type="button" class="AddTank" onclick="addWater(3)">Add</button>
+				<button type="button" class="EmptyTank" onclick="emptyWater(3)">Empty</button>
+				<div class="tank">
+					<div id="inside3"></div>
+				</div>
+				<label>Water In tank :</label>
+				<br>
+				<input type="number" id="tank3Val" readonly>
+				<br>
+				<label>Water in buffer :</label>
+				<br>
+				<input type="number" id="buffer3" readonly>
+			</div>
+
+			<div>
+				<button type="button" class="AddTank" onclick="addWater(4)">Add</button>
+				<button type="button" class="EmptyTank" onclick="emptyWater(4)">Empty</button>
+				<div class="tank">
+					<div id="inside4"></div>
+				</div>
+				<label>Water In tank :</label>
+				<br>
+				<input type="number" id="tank4Val" readonly>
+				<br>
+				<label>Water in buffer :</label>
+				<br>
+				<input type="number" id="buffer4" readonly>
+			</div>
+		</div>
+		<script src="./script.js"></script>
+	</body>
+
+</html>
